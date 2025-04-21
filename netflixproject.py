@@ -61,7 +61,7 @@ st.title("Netflix Titles Analysis Dashboard")
 
 @st.cache_data
 def load_data():
-    df = pd.read_csv("C:/Users/mhesh/Downloads/archive/netflix_titles.csv")
+    df = pd.read_csv("netflix_titles.csv")
     df['director'].fillna('Unknown', inplace=True)
     df['country'].fillna('Unknown', inplace=True)
     df['cast'].fillna('Unknown', inplace=True)
