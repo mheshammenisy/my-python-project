@@ -68,7 +68,8 @@ def load_data():
     df['rating'].fillna('Unknown', inplace=True)
     df['duration'].fillna('Unknown', inplace=True)
 
-    df['date_added'] = pd.to_datetime(df['date_added'])
+    df['date_added'] = pd.to_datetime(df['date_added'], errors='coerce')
+
     df['year_added'] = df['date_added'].dt.year
     df['month_added'] = df['date_added'].dt.month
 
