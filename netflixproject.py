@@ -49,13 +49,14 @@ st.set_page_config(layout="wide", page_title="Netflix Dashboard", page_icon="üç
 
 st.markdown("""
     <style>
-    .stApp { background-color: #141414; color: white; }
-    .css-1d391kg, .css-18e3th9 { background-color: #1F1F1F !important; }
-    h1, h2, h3, h4, h5, h6, .stMetricValue, .stMetricLabel { color: #E50914; }
-    .stButton>button { background-color: #E50914; color: white; }
-    .stSelectbox, .stMultiSelect, .stSlider { background-color: #333; color: white; }
+    .stApp { background-color: #f5f5f5; color: #333; }
+    .css-1d391kg, .css-18e3th9 { background-color: #ffffff !important; }
+    h1, h2, h3, h4, h5, h6, .stMetricValue, .stMetricLabel { color: #333; }
+    .stButton>button { background-color: #4CAF50; color: white; }
+    .stSelectbox, .stMultiSelect, .stSlider { background-color: #ffffff; color: #333; border: 1px solid #ccc; }
     </style>
 """, unsafe_allow_html=True)
+
 st.title("Netflix Titles Analysis Dashboard")
 
 
